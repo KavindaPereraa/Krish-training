@@ -130,7 +130,7 @@ public class TestApplication {
 
       @AfterEach
       void AfterEachTestCase(TestInfo testInfo) {
-            System.out.println("Finished..." + testInfo.getDisplayName());//Getting the test info after each test case 
+            System.out.println("Finished..." + testInfo.getDisplayName()); //Getting the test info after each test case 
       }
 
       @AfterAll
