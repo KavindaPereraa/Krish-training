@@ -28,12 +28,12 @@ public class NumberofOccurences { //class name
         if (validateCharacter == 0) { //if no issue run this block
 
             orderedWord = sortCharacters(uppercase_word); //sort the algorithmn
-            System.out.println(orderedWord); //priting the ordered word
+            System.out.println(orderedWord); 
 
-            hashMap=calculateOccurence(orderedWord);
+            hashMap=calculateOccurence(orderedWord); //get the occurence
 
             for(Character itt : hashMap.keySet()){
-                System.out.println(itt+" = " +hashMap.get(itt));
+                System.out.println(itt+" = " +hashMap.get(itt)); //printing the occurence
             }
 
         } else {
@@ -91,7 +91,7 @@ public class NumberofOccurences { //class name
     }
 
 
-
+//method to get in pairs the number of occurence
     public HashMap<Character, Integer> calculateOccurence(String uppercase_word) //algorithmn to count the number of occurence
     {
         char ch_character;
