@@ -1,1 +1,1 @@
-
+Create a program that will find the missing number from a set of numbers(pattern). However, the numbers must follow the (n=n+1 pattern). If there are several missing numbers, an error will be printed. Validate the pattern and sort the integers in ascending order to the given pattern. Determine whether the first or last number in the provided sequence is missing. As much as feasible, provide junit test cases.Use maven format to create the project.
