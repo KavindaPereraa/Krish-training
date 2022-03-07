@@ -3,7 +3,7 @@ import org.junit.jupiter.api.*;
 
 import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.HashMap;  /* checked some documents */
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -26,8 +26,8 @@ public class DemoTest {
      void uppercaseWordTest(){
        String expectedOutput = "JAVA";
        String actualOutput= occurences.convertToUpperCase("java");
-       assertEquals(expectedOutput, actualOutput, "Actual Value : " +actualOutput +
-               "Expected Value :" +expectedOutput);
+       assertEquals(expectedOutput, actualOutput, "Actual Output : " +actualOutput +
+               "Expected Output :" +expectedOutput);
 
    }
 
@@ -36,8 +36,8 @@ public class DemoTest {
     void validateInputNumber() throws InterruptedException {
         int expectedOutput = -1;
         int actualOutput= occurences.validateCharacter("java01");
-        assertEquals(expectedOutput, actualOutput, "Actual Value : " +actualOutput +
-                "Expected Value :" +expectedOutput);
+        assertEquals(expectedOutput, actualOutput, "Actual Output : " +actualOutput +
+                "Expected Output :" +expectedOutput);
     }
 
 
@@ -46,8 +46,8 @@ public class DemoTest {
     void validateInputSymbol() throws InterruptedException {
         int expectedOutput = -1;
         int actualOutput= occurences.validateCharacter("java$");
-        assertEquals(expectedOutput, actualOutput, "Actual Value : " +actualOutput +
-                "Expected Value :" +expectedOutput);
+        assertEquals(expectedOutput, actualOutput, "Actual Output : " +actualOutput +
+                "Expected Output :" +expectedOutput);
     }
 
     @Test
@@ -56,8 +56,8 @@ public class DemoTest {
         int expectedOutput = -1;
         int actualOutput= occurences.validateCharacter("ja va");
       //  System.out.println(actualOutput);
-        assertEquals(expectedOutput, actualOutput, "Actual Value : " +actualOutput +
-                "Expected Value :" +expectedOutput);
+        assertEquals(expectedOutput, actualOutput, "Actual Output : " +actualOutput +
+                "Expected Output :" +expectedOutput);
     }
 
 
@@ -71,8 +71,8 @@ public class DemoTest {
        String actualOutput = actualHashOutput.toString();
 
 
-        assertEquals(expectedOutput, actualOutput, "Actual Value : " +actualOutput +
-               "Expected Value :" +expectedOutput);
+        assertEquals(expectedOutput, actualOutput, "Actual Output : " +actualOutput +
+               "Expected Output :" +expectedOutput);
     }
     @AfterEach
     void AfterEachTestCase(TestInfo testInfo) {
