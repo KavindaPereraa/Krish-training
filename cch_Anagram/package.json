@@ -1,0 +1,13 @@
+{
+  "name": "anagrams",
+  "version": "1.0.0",
+  "description": "This is the solution related to the question stated by Krish(Find two strings wether they are anagram or not)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Kavinda Perera",
+  "license": "ISC"
+   
+}
