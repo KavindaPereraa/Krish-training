@@ -5,10 +5,6 @@ function splitWord(numbers){
 
     let number_Pattern = numbers.split(','); //spliiting the userinput by comma
     return number_Pattern;
-
-
-
-    
 }
 
 function validateUserInput(numbers)   //used to validate the user input (valdate if any symbol , any string letters and minimum of 3 numbers )
