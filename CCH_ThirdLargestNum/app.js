@@ -16,7 +16,6 @@ const thirdLargestNumber= require('./thirdLargestNumber');
 
 
       let intNumbers = thirdLargestNumber.convertNumberToInt(word_Split);
-   //   console.log("\r\nInt Numbers : " +intNumbers);
 
       let sortnumbers = thirdLargestNumber.sortNumbers(intNumbers);
       console.log("\r\nSorted Numbers : " +sortnumbers)
@@ -26,23 +25,6 @@ const thirdLargestNumber= require('./thirdLargestNumber');
     }else{
       console.log(validate_User);
     }
-   
-   /*   
- 
-
-
-      let findThirdLargestNumberz = thirdLargestNumber.findThirdLargestNumber(sortnumbers); 
-
-     
-      console.log("\r\nThrid Largest Number : "+findThirdLargestNumberz);  
-    }else{
-      console.log(validate_User);
-    }
- 
- 
-     */
-
- 
 
     readline.close();
 
