@@ -1,0 +1,11 @@
+{
+  "name": "third-largest-number",
+  "version": "1.0.0",
+  "description": "This is the solution to the problem given by krish (problem - To find the third largest number from a given pattern)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kavinda Perera",
+  "license": "ISC"
+}
