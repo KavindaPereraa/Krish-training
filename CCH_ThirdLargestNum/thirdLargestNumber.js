@@ -58,7 +58,7 @@ function sortNumbers(numbers){  //sort the values in the array in the ascending 
     
  
 
-function convertNumberToInt(numbers){ //converting the string array into integer values (nned causes if you input :100 or any 3 digit number with 2 digit then it will not be sorted)
+function convertNumberToInt(numbers){ //converting the string array into integer values (need causes if you input :100 or any 3 digit number with 2 digit then it will not be sorted)
     let intNumbers = []; //it order to sort 2 digit and three digit you need to convert them into integer
     for (let i = 0; i < numbers.length; i++) {
         intNumbers[i] =  parseInt(numbers[i]);
