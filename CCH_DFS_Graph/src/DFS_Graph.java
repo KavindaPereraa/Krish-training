@@ -2,15 +2,15 @@ import java.util.Stack;
 
 public class DFS_Graph {
 
-    Stack<Node> stack = new Stack<>();
-    class Node {
+    Stack<Node> stack = new Stack<>();  //creating a stack since we need to implement dfs
+    class Node {  //node class
         int value;
         Node left;
         Node right;
         Node previous;
         boolean visited;
 
-        public Node(int value) {
+        public Node(int value) { //constructor
             this.value = value;
             this.left = null;
             this.right = null;
@@ -18,11 +18,11 @@ public class DFS_Graph {
             this.visited = false;
         }
     }
-    public void DFS() {
+    public void DFS() {  //starting the application
         stack.add(TreeCreation());
         traverse(stack);
     }
-    private Node TreeCreation(){
+    private Node TreeCreation(){ //creating the nodes of the tree to the same as krish's video
         Node root = new Node(0);
         root.left = new Node(3);
         root.left.left = new Node(7);
@@ -35,7 +35,7 @@ public class DFS_Graph {
         return  root;
     }
 
-    private void traverse( Stack<Node> stack) {
+    private void traverse( Stack<Node> stack) { //travelling through the graph
         Node currentNode = stack.peek(); //getting the current value with peek
 
         if ((currentNode.visited) || (currentNode == null) )
