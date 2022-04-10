@@ -1,15 +1,15 @@
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class BFS_Graph {
-    Queue<Node> queue = new LinkedList<>();
-      class Node {
+public class BFS_Graph { //creatinga  class
+    Queue<Node> queue = new LinkedList<>(); //we used the queue pattern since it is a bfs graph
+      class Node { //creating a node class with specific characteristics
         char value;
         Node left;
         Node right;
         boolean visited;
 
-        public Node(char value) {
+        public Node(char value) { //constructor
             this.value = value;
             this.left = null;
             this.right = null;
@@ -19,7 +19,7 @@ public class BFS_Graph {
 
     private Node TreeCreation(){
 
-          Node rootA = new Node('A');
+          Node rootA = new Node('A'); //creating the tree exactly as krish's video
 
           rootA.left = new Node('C');
           rootA.left.left = new Node('G');
@@ -30,10 +30,7 @@ public class BFS_Graph {
           return rootA;
 
     }
-    public void BFS() {
-        queue.add(TreeCreation());
-        traverse(queue.remove());
-    }
+  
     private void traverse(Node node) {
 
         if (queue == null){
@@ -51,6 +48,10 @@ public class BFS_Graph {
         traverse(queue.poll());
 
     }
-
+    
+   public void BFS() {
+        queue.add(TreeCreation());
+        traverse(queue.remove()); //calling application function
+    }
 }
 
