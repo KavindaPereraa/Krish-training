@@ -1,0 +1,8 @@
+server:
+  port: 8191
+
+
+ 
+spring:
+  profiles:
+    active: native
